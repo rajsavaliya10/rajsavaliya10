@@ -1,0 +1,1281 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Fira Sans', sans-serif;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+img{
+    max-width: 100%;
+}
+/* header menu start  */
+.header-log-nav{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1;
+    top:0;
+    left: 0;
+    right: 0;
+}
+.header-menu{
+    display: flex;
+    align-items: center;
+    padding-block: 4px 4px;
+    column-gap: 163px;
+    z-index: 1;
+}
+.header-menu ul{
+    display: flex;
+    column-gap: 43px;
+}
+.header-menu ul li a{
+    text-decoration: none;
+    color: rgba(109, 109, 109, 1);
+    font-weight: 400;
+    font-Size:18px;
+    line-height:21.97px;
+}
+.header-menu ul li a:hover{
+    color:#19bdac;
+    transition: 0.5s;
+}
+.header-icon{
+    display: flex;
+    column-gap: 30px;
+}
+.header-icon:hover{
+    color: #19bdac;
+}
+.nav-bars{
+    display: none;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #A28A8A;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 26px;
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #19bdac;
+    padding: 10px 15px;
+    border: none;
+}
+.openbtn:hover {
+    background-color: #444;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 6px 106px 28px 0px;
+}
+/* banner section start  */
+.slick-dots li::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    background:rgba(255, 255, 255, 1);
+    position: absolute;
+}
+.slick-dots li button{
+    display: none;
+}
+.slick-dots{
+    gap: 36px;
+    display: flex;
+    justify-content: center;
+    padding-top: 77px;
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+}
+.slick-dots li.slick-active::after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background:rgba(26, 77, 72, 1);
+    position: absolute;
+    top: 87%;
+    border: 6px solid rgba(255, 255, 255, 1);
+    transform: translateX(-21%);
+}
+.banner-section{
+    background-image: url('image/Banner-img.png');   
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+}
+.banner-heading-text{
+    display: flex;
+}
+.banner-heading{
+    padding-block:205px 206px;
+}
+.banner-heading h2{
+    font-size: 72px;
+    font-style: normal;
+    color: #FFF;
+    font-weight: 500;
+    line-height: 89px;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+}
+.banner-heading p{
+    font-size: 24px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    width: 58%;
+    padding-block: 30px 60px;
+}
+.banner-heading a{
+    color: #FFF;
+    font-size: 18px;
+    letter-spacing: 0.72px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+}
+.banner-shop{
+    padding: 15px 56px 15px 57px;
+    background-color: #A28A8A;
+}
+.banner-heading a:hover{
+    transition: 0.8s;
+    background-color: #19bdac;
+}
+/* banner bottm section satrt  */
+.banner-bot{
+    background-image: url('image/banner-btm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(162, 138, 138, 1);
+}
+.banner-bot-head{
+    display: flex;
+    padding-block: 80px 79px;
+    column-gap: 360px;
+    align-items: center;
+}
+.banner-bot-head h3{
+    color: #fff;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.58px;
+}
+.banner-bot-head a{
+    padding: 18px 56px 18px 57px;
+    background-color: #fff;
+    color: #1A4D48;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+}
+.banner-bot-head a:hover{
+    background-color: #19bdac;
+    color: #fff;
+    transition: 0.8s;
+}
+/* shop and shap item section satrt  */
+.shop-shap h3{
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.shop-img{
+    display: grid;
+    justify-items: center;
+    padding-block: 120px 2px;
+    color: #C9BEBC;
+}
+.shap-img-name{
+    display: grid;
+    padding-block: 63px 120px;
+    grid-template-columns: repeat(5,1fr);
+    align-items: baseline;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.shop-item{
+    padding: 14px 34px 30px 34px;
+    text-align: center;
+}
+.shop-item img{
+    padding-bottom:12px;
+}
+.shop-item p{
+    font-size: 24px;
+    padding-block: 10px 15px;
+    color: #232323;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.24px;
+}
+/* shop style section start  */
+.style-shopping{
+    background-image: url('image/style bc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slick-slide img {
+    display: block;
+    padding: 82px 0 25px 0;
+}
+.style-shop{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.style-shop h3{
+    padding-top: 120px;
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.ring-collection .slick-track {
+    display: flex;
+    align-items: center;
+}
+.ring-collection{
+    display: flex;
+    column-gap: 108px;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.ring-collection img{
+    margin:0 auto;
+    border-radius: 50%;
+    width: 244px;
+    height: 240px;
+}
+.shop-ring p{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    color: #FFF;
+}
+.shop-ring .slick-slide .slick-active{
+    transition: all 0.4s ease-in-out;
+}
+.slick-active img{
+    transition: all 0.4s ease-in-out;
+}
+.ring-collection .slick-center img{
+    scale: 1.3;
+}
+.ring-collection .slick-slide img {
+    display: block;
+    padding-block: 60px;
+}
+.ring-collection.slick-slider button{
+    position: absolute;
+    z-index: 1;
+    font-size: 0;
+    bottom:75px;
+}
+.ring-collection button.slick-next.slick-arrow:hover{
+    right: 45.50%;
+    transition: 0.8s;
+}
+.ring-collection button.slick-prev.slick-arrow:hover{
+    left: 45.50%;
+    transition: 0.8s;
+}
+.ring-collection button.slick-prev.slick-arrow {
+    left: 46%;
+    background-image:url('image/Left Arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.ring-collection button.slick-next.slick-arrow {
+    right: 46%;
+    background-image:url('image/Right Arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* metal shop section  start  */
+.metal-shop{
+    display: grid;
+    justify-items: center;
+    padding-block: 120px 31px;
+}
+.metal-shop h3{
+    font-size: 48px;
+    color: #000;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.gold-ring{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    padding-bottom: 147px;
+}
+.metal-img{
+    transition: 0.8s all ease-in-out;
+}
+.metal-img:hover img{
+    transform: scale(1.2);
+    transition: 0.6s;
+    overflow: hidden;
+}
+.gold-collation{
+    display: flex;
+    align-items: center;
+    background-image: url('image/metal-ring-bg.png');
+    background-repeat: no-repeat;
+    background-color: rgba(247, 247, 247, 1);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.gold-collct{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('image/metal-ring-bg.png');
+    background-repeat: no-repeat;
+    background-color: #fffaeb;
+    width: 100%;
+    height: 100%;
+}
+.gold-collction{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('image/metal-ring-bg.png');
+    background-repeat: no-repeat;
+    background-color: #fef0f1;
+    width: 100%;
+    height: 100%;    
+}
+.gold-name p{
+    font-size: 42px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    padding-bottom: 30px;
+}
+.gold-name a{
+    color: #232323;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.gold-name{
+    padding-left:90px;
+}
+.gold-item-name{
+    color: #1A4D48;
+}
+/* new collation section start  */
+.collation-of-rings{
+    display: flex;
+    justify-content: center;
+    max-width: 1604px;
+    padding: 0 0px 0 152px;
+    margin: 0 auto;
+}
+.new-collection{
+    padding-block:90px 0px;
+}
+.new-collection h3{
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.new-collection p{
+    width: 80%;
+    padding-block: 30px 50px;
+    color: #6D6D6D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+}
+.new-collection a:hover{
+    background-color: #19bdac;
+}
+.new-collection-img{
+    overflow: scroll;
+    width: 975px;
+    height: 411px;
+}
+.new-collection-img::-webkit-scrollbar{
+    display: none;
+}
+.new-collection a{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    color: white;
+    background-color: #A28A8A;
+    padding: 15px 21px 15px 22px;
+    text-decoration: none;
+    display: inline-block;
+}
+/* ring style section start  */
+.ring-style{
+    margin-top: 100px;
+    background-image: url('image/wearing-wedding-rings.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ring-name h3{
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.ring-for-a-name{
+    padding:81px 40px 86px 30px;
+    background-color: #fff;
+}
+.ring-style{
+    padding: 176px 156px 150px 63%;
+}
+.ring-name a:hover{
+    background-color: #19bdac;
+}
+.ring-name p{
+    color: #6D6D6D;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    padding-block: 20px 40px;
+    width: 100%;
+}
+.ring-name a{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    padding: 15px 66px 15px 67px;
+    background-color: #A28A8A;
+    display: inline-block;
+}
+/* review section strat  */
+.review-discrip-image{
+    display: flex;
+    padding-block:68px 113px;
+}
+.review h3{
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.review{
+    display: grid;
+    justify-items: center;
+    padding-block: 137px 9px;
+}
+.review-img-and-name{
+    display: none;
+}
+.review-img{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 13px;
+}
+.review-discription{
+    color: #6D6D6D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+.review-name p{
+    color: #6D6D6D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.review-discrip-image .slick-slide .slick-active{
+    transition: all 0.4s ease-in-out;
+}
+.review-discrip-image .slick-active img{
+    transition: all 0.4s ease-in-out;
+}
+.review-discrip-image .slick-center .review-man-img img {
+    scale: 1.6;
+}
+.slick-center .review-img-and-name {
+    display: block;
+}
+.slick-initialized .slick-slide {
+    display: flex ;
+}
+.review-man-img img{
+    margin: 0 auto;
+}
+.review-img-and-name{
+    align-items: center;
+}
+.review-man-img .slick-slide img {
+    display: block;
+    padding-block: 86px;
+}
+.review-discrip-image.slick-slider button{
+    position: absolute;
+    z-index: 1;
+    font-size: 0;
+    bottom: 57px;
+}
+.review-discrip-image button.slick-prev.slick-arrow {
+    left: 46%;
+    background-image:url('image/Left-Arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.review-discrip-image button.slick-next.slick-arrow {
+    right: 46%;
+    background-image:url('image/Right-Arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.review-discrip-image button.slick-prev.slick-arrow:hover {
+    left: 44.80%;
+    transition: 0.8s;
+}
+.review-discrip-image button.slick-next.slick-arrow:hover {
+    right: 44.80%;
+    transition: 0.8s;
+}
+/* FAQ asked section start  */
+.faq-section{
+    background-image:url('image/Faq.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 130px 52px;
+}
+.faq-heading{
+    display: grid;
+    justify-content: center;
+}
+.faq-heading h3{
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.faq-detail{
+    padding-bottom: 128px;
+    margin: 0 auto;
+    padding:0 242px;
+}
+details{
+    background-color: transparent;
+    color: #6D6D6D;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    cursor: pointer;
+    border-bottom: 1px solid #C9BEBC;
+}
+summary {
+    padding:52px 0px 41px 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  
+    transition: height 1s ease;
+    
+}
+summary::-webkit-details-marker {
+    display: none;
+    font-weight: 500;
+    color: #080808;
+} 
+summary:after{
+    content: "\002B";
+    font-size: 40px;
+    font-weight: 500;
+    color: #080808;
+}
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+    font-weight: 700;
+    color: #080808;
+    transition: 0.6s;
+} 
+details[open] summary:after{
+    content: "\00D7";
+    font-weight: 500;
+}
+details[open] div{
+    padding: 0px 15px 24px;
+    font-weight: 300;
+    font-size: 20px;
+}
+/* email section start  */
+.email-bg{
+    background-image: url('image/Email bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #A28A8A;
+}
+.email-section{
+    padding-block: 95px 95px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.email-img{
+    padding-right: 40px;
+}
+.email-section h3{
+    color: #FFF;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    padding:0 76px 0 30px;
+}
+.input-email{
+    padding: 18px 20px 18px ;
+    width: 380px;
+    color: #6D6D6D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    border: none;
+}
+input.input-email{
+    outline: none;
+}
+.email-section a{
+    color: #FFF;
+    margin-left: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 18px 68px 18px 68px;
+    background-color: #232323;
+}
+.email-section a:hover{
+    background-color: #19bdac;
+    transition: 0.5s;
+}
+/* visit us section start  */
+.visit-heading{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-block: 100px 30px;
+}
+.visit-heading h3{
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.faq-visit{
+    padding:0 242px 55px;
+    margin: 0 auto;
+}
+.visit-icon{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    padding-bottom: 121px;
+}
+.fa-facebook:before {
+    content: "\f09a";
+    display: inline-block;
+    font-size: 24px;
+    padding: 16px 18px 16px 18px;
+    border-radius: 50%;
+    background-color: #4267B2;
+    color: #fff;
+}
+.fa-twitter:before {
+    content: "\f099";
+    display: inline-block;
+    font-size: 24px;
+    padding: 16px 18px 16px 18px;
+    border-radius: 50%;
+    background-color: #1DA1F2;
+    color: #fff;
+}
+.fa-instagram:before {
+    content: "\f16d";
+    display: inline-block;
+    font-size: 24px;
+    padding: 16px 18px 16px 18px;
+    border-radius: 50%;
+    background-color: #FF9B4A;
+    color: #fff;
+}
+.fa-pinterest:before {
+    content: "\f0d2";
+    display: inline-block;
+    font-size: 24px;
+    padding: 16px 18px 16px 18px;
+    border-radius: 50%;
+    background-color: #E60023;
+    color: #fff;
+}
+.fa-youtube:before {
+    content: "\f167";
+    display: inline-block;
+    font-size: 24px;
+    padding: 16px 18px 16px 18px;
+    border-radius: 50%;
+    background-color: #F00;
+    color: #fff;
+}
+/* footer section strat  */
+footer{
+    background-color: #A28A8A;
+    padding-top: 60px;
+}
+.footer-heading{
+    display: grid;
+    justify-items: center;
+}
+.footer-heading h3{
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.footer-image{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    text-align: center;
+    padding-block:30px 60px ;
+}
+.footer-icon a img{
+    padding: 19px 18px 19px 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.footer-icon p{
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+.footer-list ul{
+    display: flex;
+    column-gap: 52px;
+    justify-content: center;
+}
+.footer-list ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.footer-term {
+    display: grid;
+    justify-content: center;
+    padding-block: 29px 20px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.footer-list ul a:hover{
+    color: #19bdac;
+    transition: 0.6s;
+}
+/* ring responsive in weight is 1024px */
+@media screen and (max-width: 1024px) {
+/* header menu start  */
+    .header-menu ul{
+        column-gap: 21px;
+    }
+    .header-menu ul li a{
+        font-size: 15px;
+    }
+    .header-menu{
+        justify-content: space-around;
+        column-gap: normal;
+    }
+    .header-icon{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 15px;
+    }
+/* banner section start  */
+    .banner-heading h2{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .banner-heading p{
+        width: auto;
+        font-size: 18px;
+    }
+/* banner bottm start */
+    .banner-bot-head h3{
+        font-size: 40px;
+        width: auto;
+        padding-bottom: 20px;
+    }
+    .banner-bot-head{
+        column-gap:92px;
+        padding-block: 53px 43px;
+    }
+/*shop by shap section satrt */
+    .shop-img{
+        padding-block: 55px 2px;
+    }
+    .shap-img-name{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-block: 26px 31px;
+    }
+    .style-shop h3{
+        padding-top: 55px;
+        font-size: 40px;
+    }
+    /* shop style section start  */
+    .ring-collection img {
+        margin: 0 auto;
+        border-radius: 50%;
+        width: 126px;
+        height: 136px;
+    }
+    .shop-ring p{
+        font-size: 18px;
+    }
+    .ring-collection button.slick-next.slick-arrow{
+        right: 38%;
+    }
+    .ring-collection button.slick-prev.slick-arrow{
+        left: 43%;
+    }
+    .ring-collection button.slick-next.slick-arrow:hover{
+        right: 36%;
+    }
+    .ring-collection button.slick-prev.slick-arrow:hover{
+        left: 42%;
+    }
+/* metal shop section start */
+    .gold-name p{
+        font-size: 20px;
+    }
+    .gold-name a{
+        font-size: 14px;
+    }
+    .gold-name{
+        padding-left: 32px;
+    }
+    .metal-shop {
+        padding-block: 67px 31px;
+    }
+    .gold-ring{
+        padding-bottom: 68px;
+    }
+/* new collation section stat */
+    .new-collection{
+        padding-top: 39px;
+    }
+    .new-collection h3{
+        font-size: 34px;
+    }
+    .new-collection p{
+        width: 90%;
+        padding-block: 7px 36px;
+        font-size: 15px;
+    }
+    .collation-of-rings{
+        padding: 0 20px 0 74px;
+    }
+    .new-collection a{
+        font-size: 16px;
+    }
+    .new-collection-img{
+        height: 378px;
+    }
+/*ring style section start */
+    .ring-style{
+        padding: 106px 133px 38px 40%
+    }
+    .ring-name h3{
+        font-size: 35px;
+    }
+    .ring-name p{
+        padding-block: 14px 28px;
+    }
+    .ring-for-a-name{
+        padding: 72px 21px 51px 25px;
+    }
+    .ring-name a{
+        font-size: 15px;
+    }
+/*review section start */
+    .review{
+        padding-block: 90px 9px
+    }
+    .review-discrip-image .slick-center .review-man-img img {
+        scale: 1.4;
+    }
+    .review-discrip-image button.slick-next.slick-arrow {
+        right: 37%;
+    }
+    .review-discrip-image button.slick-next.slick-arrow:hover {
+        right: 35%;
+    }
+ /* FAQ Asked section start */
+    .faq-detail {
+        padding: 0 107px;
+    }
+/* sign up section start  */
+    .email-section h3 {
+        font-size: 18px;
+        padding: 0 43px 0 13px;
+    }
+    .email-img {
+        padding-right: 20px;
+    }
+    .email-section a {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    .input-email{
+        font-size: 16px;
+    }
+/* visit us section start  */
+    .visit-heading {
+        padding-block: 65px 30px;
+    }
+    .visit-icon {
+        padding-bottom: 20px;
+    }
+/* footer section start  */
+    .footer-list ul {
+        display: flex;
+        column-gap: 8px;
+    }
+    .footer-list ul li a {
+        text-decoration: none;
+    }
+    .footer-heading h3 {
+        font-size: 42px;
+    }
+    .footer-image {
+        padding-block: 30px 38px
+    }
+}
+@media screen and (max-width: 767px) {
+/* header menu start  */
+    .head-manu{
+        display: none;
+    }
+    .header-menu ul li a{
+        font-size: 18px;
+        color: #ffffff;
+        width: 100%;
+    }
+    .header-icon .search  {
+        display: none;
+    }
+    .header-icon .hart{
+        display: none;
+    }
+    .header-icon .cart{
+        display: none;
+    }
+    .header-icon{
+        position: absolute;
+        right:-15px;
+        top: 16px;
+    }
+    .header-menu ul{
+        flex-wrap: wrap;
+        width: 0;
+        position: absolute;
+        left: 50px;
+    }
+    .header-menu {
+        justify-content: space-around;
+        column-gap: normal;
+    }
+    .icon-menu{
+        display: flex;
+        column-gap: 10px;
+    }
+    .nav-bars{
+        display: block;
+    }
+    .sidebar .closebtn {
+        top: -36px;
+        right: -193px;
+    }
+/* banner section start  */
+    .banner-heading {
+        padding-block: 90px 91px;
+    }
+    .banner-heading p {
+        padding-block: 2px 31px;
+    }
+/* banner bottm start */
+    .banner-bot-head{
+        flex-wrap: wrap;  
+        grid-row: 10px;  
+        justify-content: center;
+        text-align: center;
+    }
+/*shop by shap section satrt */
+    .shap-img-name{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .shop-shap h3 {
+        font-size: 36px;
+    }
+/* shop style section start  */
+    .ring-collection{
+        padding-bottom:100px;
+    }
+    .ring-collection {
+        padding-bottom: 76px;
+    }
+    .style-shop h3{
+        font-size: 32px;
+    }
+/* metal shop section start */
+    .metal-shop{
+        padding-block: 51px 31px;
+    }
+    .metal-shop h3{
+        font-size: 38px;
+    }
+    .gold-ring{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+/*  new collation section stat  */
+    .gold-ring {
+        padding-bottom: 44px;
+    }
+    .collation-of-rings{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .new-collection-img {
+        height: 207px;
+    }
+    .ring-collection img{
+        width: 146px;
+    }
+/* ring style section start  */
+    .ring-style {
+        padding: 69px 5px 44px 17%;
+    }
+/* sign up section start */
+    .email-section{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .email-section {
+        padding-block: 45px 41px;
+    }
+/*review section start */
+    .review-discrip-image {
+        padding-block: 18px;
+    }
+    .slick-slide img {
+        padding: 35px 0 0 0;
+    }
+    .review-img{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    .review-discription {
+        font-size: 16px;
+        padding-bottom: 22px;
+    }
+    .review-discrip-image .slick-center .review-man-img img{
+        padding: 0 78px;
+    }
+    .review {
+        padding-block: 33px 9px;
+    }
+/*FAQ Asked section start  */
+    .faq-section {
+        padding-block: 20px 52px;
+    }
+    .faq-detail {
+        padding: 0 40px;
+    }
+    .faq-visit {
+        padding: 0 24px;
+    }
+    details{
+        font-size: 20px;
+    }
+/*visit us section start */
+    .visit-heading {
+        padding-block: 31px 30px;
+    }
+    summary {
+        padding: 20px 0px 41px 15px;
+    }
+/* footer section start  */
+    .footer-list ul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer-heading h3 {
+        font-size: 38px;
+    }
+    .footer-list ul li a{
+        font-size: 15px;
+    }
+    .footer-term {
+        font-size: 13px;
+    }
+    footer {
+        padding-top: 22px;
+    }
+}
+@media screen and (max-width: 425px) {
+/* banner section strat  */
+    .banner-heading h2 {
+        font-size: 41px;
+    }
+/* shop by shap section satrt */
+    .shop-img {
+        padding-block: 37px 2px;
+    }
+    .shap-img-name {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    } 
+/*new collation section stat */
+    .collation-of-rings {
+        padding: 0 15px;
+    }
+/*ring style section start */
+    .ring-style {
+        padding: 39px 5px 44px 17%;
+    }
+    .ring-name h3 {
+        font-size: 29px;
+    }
+/*review section start */
+    .review-discrip-image .slick-center .review-man-img img {
+        padding: 0 60px;
+        margin: 0 auto;
+    }
+/*visit us section start */
+    .visit-icon{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        row-gap: 30px;
+    }
+    summary {
+        padding: 19px 0px 32px 0;
+    }
+}
